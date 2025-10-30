@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VGP CELL - O.S.</title>
+    <link rel="icon" href="assets/IMG/icone.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand"><img src="assets/img/Logo.png" alt="VGP CELL" width="100"/></div>
+        <nav class="menu">
+          <button class="menu-item" data-route="dashboard">Dashboard</button>
+          <button class="menu-item" data-route="os-list">Ordens de Serviço</button>
+          <button class="menu-item" data-route="os-new">+ Nova O.S.</button>
+          <button class="menu-item" data-route="clients">Clientes</button>
+          <button class="menu-item" data-route="settings">Configurações</button>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div class="search">
+            <input id="globalSearch" type="search" placeholder="Buscar por cliente, Nº O.S." />
+          </div>
+          <div class="actions">
+            <button id="btnNewOS" class="btn btn-primary">Nova O.S.</button>
+          </div>
+        </header>
+
+        <section id="view" class="view"></section>
+      </main>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+  </html>
+
