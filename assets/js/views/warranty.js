@@ -32,7 +32,7 @@ export function renderWarranty(view, id){
         <div class="rowline"><div class="line"><span class="label">Garantia (dias)</span><br><input id="wDays" type="number" min="0" value="${warrantyDays}" style="max-width:120px;"></div></div>
       </div>
       <div class="box"><div class="rowline"><div>Data: ${today}</div><div>Marca: ${brand}</div></div><div style="margin-top:8px; font-weight:700;">${warrantyDays} DIAS DE GARANTIA</div></div>
-      <div class="box">
+      <div class="box" style="page-break-inside:auto; break-inside:auto;">
         <div>
           <p><strong>1. OBJETO</strong></p>
           <p>Este termo tem por objeto a prestação de serviços de assistência técnica em aparelhos celulares, abrangendo diagnóstico, reparo, substituição de componentes e manutenção preventiva ou corretiva.</p>
