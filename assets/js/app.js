@@ -1,5 +1,5 @@
 // app.js - SPA OS manager (ASCII-safe)
-// 
+//
 // Objetivo: App de Ordens de Servico (O.S.) em SPA puro (ES Modules)
 // - Roteamento por hash (#dashboard, #os-list, etc.)
 // - CRUD de O.S. e Clientes via localStorage (espelho em IndexedDB)
@@ -19,6 +19,7 @@ import {
   setFormValues,
   downloadJSON,
 } from "./utils.js";
+
 import {
   getAllOS,
   saveOS,
@@ -31,7 +32,17 @@ import {
   getOSById,
   generateOSNumber,
 } from "./storage.js";
-import { saveToDatabase, deleteFromDatabase } from "./db.js";
+
+import { saveToDatabase, fetchFromDatabase, deleteFromDatabase } from "./db.js";
+
+import {
+  STATUS,
+  PAYMENT_METHODS,
+  PAYMENT_STATUS,
+  WARRANTY_TERMS,
+  DEFAULT_SETTINGS,
+  statusClass,
+} from "./constants.js";
 
 // Router map
 const routes = {
